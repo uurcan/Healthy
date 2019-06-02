@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chrome_grey"
+    tools:ignore="Autofill"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewGroupDateTimePicker"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TimePicker
+        android:id="@+id/timePickerReminder"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGroupDateTimePicker"
+        android:layout_height="wrap_content"/>
+
+    <DatePicker
+        android:visibility="visible"
+        android:scaleX="1.1"
+        android:id="@+id/datePickerReminder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGroupDateTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutSwitchButton"
+        app:layout_constraintTop_toBottomOf="@id/viewGroupDateTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/chrome_grey"
+        android:text="@string/pick_hour"
+        android:background="@drawable/button_background_red"
+        android:id="@+id/btnInitializeTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layoutSwitchButton"/>
+
+    <TextView
+        android:text="@string/_00_00_utc"
+        android:layout_margin="12dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewSelectedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layoutSwitchButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:id="@+id/editTextReminderTitle"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSwitchButton"
+        android:hint="@string/reminder_title"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+     />
+    <EditText
+        android:id="@+id/editTextReminderText"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReminderTitle"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder_text"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_margin="12dp"/>
+    <RadioGroup
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReminderText"
+        android:id="@+id/radioGroupReminder"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonAlarm"
+            android:text="@string/set_alarm"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButtonNotify"
+            android:text="@string/choose_notify"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:textColor="#fff"
+        android:text="@string/set_alarm"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_background"
+        android:id="@+id/buttonReminderSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

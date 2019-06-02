@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_margin="8dp"
+        android:contentDescription="@string/food_fragment"
+        android:src="@drawable/ico_info_128"
+        android:id="@+id/imageViewFoodURLDetail"
+        android:layout_width="256dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textViewDetailedFoodName"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:text="@string/food_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lorem_ipsum_dolor_sit_amet"
+        android:id="@+id/textViewDetailedFoodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="@string/food_fragment"
+        android:id="@+id/textViewDetailedFoodCalory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonFoodPreviousPage"
+            android:background="@drawable/button_background_red"
+            android:textColor="@color/white"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonAddCalory"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="@string/add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

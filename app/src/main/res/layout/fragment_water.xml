@@ -1,0 +1,341 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chrome_grey"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:id="@+id/layoutWaterAmountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        app:wlv_borderColor="#256d7b"
+        app:wlv_borderWidth="3dp"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+        app:wlv_shapeType="circle"
+        app:wlv_waveColor="#ADD8E6"
+        app:wlv_waveAmplitude="70"
+
+        android:id="@+id/waveLoadingView"
+        android:layout_weight="2.5"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:wlv_titleBottomColor="@color/white"
+        app:wlv_titleBottomStrokeColor="@color/black"
+        app:wlv_titleBottomSize="22sp"
+        app:wlv_titleBottomStrokeWidth="3dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:contentDescription="@string/water_fragment"
+            android:layout_weight="2.5"
+            android:id="@+id/imageViewWaterPercentage"
+            android:src="@drawable/ico_glass_half_256"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/water_fragment"
+                android:id="@+id/imageViewWaterTick"
+                android:visibility="gone"
+                android:src="@drawable/ico_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:fontFamily="casual"
+                android:id="@+id/textViewWaterSummary"
+                android:textColor="@color/red"
+                android:text="@string/water_amount_daily"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textColor="#256d7b"
+                android:fontFamily="casual"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/editTextWaterAmount"
+                android:inputType="number"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:hint="@string/add_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/buttonAddManually"
+                android:contentDescription="@string/water_fragment"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_add_circle_green_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/buttonRemoveManually"
+                    android:contentDescription="@string/water_fragment"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_remove_circle_red_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="4"
+        android:id="@+id/layoutWaterAdditionalChoices"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@string/water_fragment"
+            android:layout_weight="0.7"
+            android:src="@drawable/ico_250ml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:contentDescription="@string/water_fragment"
+            android:layout_weight="0.7"
+            android:src="@drawable/ico_330ml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:contentDescription="@string/water_fragment"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:src="@drawable/ico_500ml"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:contentDescription="@string/water_fragment"
+            android:layout_weight="0.7"
+            android:src="@drawable/ico_1l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="4"
+        android:id="@+id/layoutWaterInfo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#256d7b"
+            android:fontFamily="casual"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/_250ml"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#256d7b"
+            android:fontFamily="casual"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/_330ml"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#256d7b"
+            android:fontFamily="casual"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/_500ml"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#256d7b"
+            android:fontFamily="casual"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/_1l"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:weightSum="4"
+        android:id="@+id/layoutWaterAddButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/buttonAdd250mL"
+            android:contentDescription="@string/water_fragment"
+            android:src="@drawable/ic_add_circle_green_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/buttonRemove250mL"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_remove_circle_red_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/buttonAdd330mL"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_add_circle_green_32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/buttonRemove330mL"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_remove_circle_red_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/buttonAdd500mL"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_add_circle_green_32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/buttonRemove500mL"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_remove_circle_red_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:clickable="false"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/buttonAdd1L"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_add_circle_green_32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/buttonRemove1L"
+                android:contentDescription="@string/water_fragment"
+                android:src="@drawable/ic_remove_circle_red_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

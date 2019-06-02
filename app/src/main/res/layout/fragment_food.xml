@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/linearLayoutFoodItem"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/chrome_grey"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewFood"
+        app:queryHint="@string/food_fragment"
+        app:defaultQueryHint="@string/food_fragment"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextAddManually"
+            android:layout_weight="3"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/add_calory"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:textColor="@color/white"
+            android:text="@string/add"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:id="@+id/buttonAddCaloryManually"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
+        android:id="@+id/recyclerViewFoodList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

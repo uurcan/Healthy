@@ -1,0 +1,139 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name">Healthy App</string>
+
+    <array name="tab_name">
+        <item>Home</item>
+        <item>Food</item>
+        <item>Water</item>
+        <item>Reminder</item>
+        <item>Pedometer</item>
+    </array>
+
+    <string name="home_fragment">Home</string>
+    <string name="reminder_fragment">Reminder </string>
+    <string name="food_fragment">Food </string>
+    <string name="water_fragment">Water </string>
+    <string name="out_of_range">Please enter a valid variable</string>
+    <string name="bmi_2low_index">Your BMI is too low</string>
+    <string name="bmi_low_index">Your BMI is low</string>
+    <string name="bmi_normal_index">Your BMI is average</string>
+    <string name="bmi_high_index">Your BMI is high</string>
+    <string name="bmi_2high_index">Your BMI is too high</string>
+    <string name="bmi_obese">Your BMI is the level of obese</string>
+    <string name="bmi_type_error">Please enter your height</string>
+    <string name="bmi_input_request">Please enter your  </string>
+    <string name="bmi_input_request2">weight and height..</string>
+    <string name="welcome_text">Welcome !</string>
+    <string name="profile_home">Home</string>
+    <string name="content_show_bmi">Your BMI result is :</string>
+    <string name="default_show_bmi">BMI :</string>
+    <string name="content_show_result">Show Results</string>
+    <string name="default_show_result">Results :</string>
+    <string name="empty_string" />
+    <string name="text_label_kg">Kg</string>
+    <string name="text_label_m">M</string>
+    <string name="text_button_calculate">CALCULATE</string>
+    <string name="weight">Weight</string>
+    <string name="minimum_kg_value">50 Kg</string>
+    <string name="Height">Height</string>
+    <string name="minimum_height_value">100 cm</string>
+    <string name="title_home">Home</string>
+    <string name="title_reminder">Reminder</string>
+    <string name="title_food">Food</string>
+    <string name="title_water">Water</string>
+    <string name="text_button_proceed">PROCEED</string>
+    <string name="required_amount_of_water">Recommended amount of water..</string>
+    <string name="liter">Liter</string>
+    <string name="reminder_title">Title</string>
+    <string name="reminder_text">Alarm Message</string>
+    <string name="reminder_amount">Alarm frequency</string>
+    <string name="set_alarm">Set alarm</string>
+    <string name="_00_00_utc">00:00 UTC</string>
+    <string name="choose_notify">Send Notification</string>
+    <string name="not_set">Not Set</string>
+    <string name="time_format">HH:mm</string>
+    <string name="dateFormat">dd/MM/yyyy</string>
+    <string name="pick_hour">Pick Hour</string>
+    <string name="delete">DELETE</string>
+    <string name="edit">UPDATE</string>
+    <string name="negative">NO</string>
+    <string name="positive">YES</string>
+    <string name="selected_value_removed">ALARM REMOVED FROM YOUR LIST</string>
+    <string name="message">MESSAGE</string>
+    <string name="dateTime_text">DATE</string>
+    <string name="alert_type">Alert Type</string>
+    <string name="notification">Notification</string>
+    <string name="alert">Alarm</string>
+    <string name="are_you_sure_want_to_delete">Are you sure you want to remove selected reminder ? </string>
+    <string name="warning">Warning</string>
+    <string name="pick_target">Select Target</string>
+    <string name="title_pedometer">Pedometer</string>
+    <string name="ten_thousand">10.000</string>
+    <string name="steps">steps</string>
+    <string name="average">Average</string>
+    <string name="total">Total</string>
+    <string name="_50">50</string>
+    <string name="_500">500</string>
+    <string name="value_time_format">%02d:%02d:%02d</string>
+    <string name="no_sensor">Sensor not found</string>
+    <string name="no_sensor_explain">There is no sensor for your device</string>
+    <string name="select_target">Select Target</string>
+    <string name="highest">Highest</string>
+    <string name="weekly_total">Weekly Total</string>
+    <string name="weekly_average">Weekly Average</string>
+    <string name="monthly_total">Monthly Total</string>
+    <string name="monthly_average">Monthly Average</string>
+    <string name="ok">OK</string>
+    <string name="daily_target_completed">Target Completed</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="info">About</string>
+    <string name="language_preferences">Language</string>
+    <string name="calories">Calories</string>
+    <string name="water">Water</string>
+    <string name="reminder">Reminder</string>
+    <string name="total_steps">Total Steps</string>
+    <string name="total_calories">Total Calories</string>
+    <string name="turkish">Türkçe</string>
+    <string name="english">English</string>
+    <string name="pick_language">Select Language</string>
+    <string name="cancel">CANCEL</string>
+    <string name="editing_complete">Editing has been completed.</string>
+    <string name="alarm_has_been_set">The alarm has been set</string>
+    <string name="about">About</string>
+    <string name="water_amount_daily">0 / 2.4 L</string>
+    <string name="add_value">Add Water (mL)</string>
+    <string name="_250ml">250mL</string>
+    <string name="_330ml">330mL</string>
+    <string name="_500ml">500mL</string>
+    <string name="_1l">1L</string>
+    <string name="created_by">Created By : </string>
+    <string name="Ugurcan_Celebi">Uğurcan Çelebi</string>
+    <string name="search">Search : </string>
+    <string name="lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor volutpat tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac tellus id lacus scelerisque bibendum a vel justo. In dignissim ac ipsum malesuada eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus at libero et finibus. Quisque efficitur viverra nisi non accumsan. Vivamus in urna nisl. Duis vehicula dictum facilisis. Pellentesque id porta nisi, eget aliquam enim. Quisque facilisis faucibus felis, a lobortis tellus accumsan ut. Fusce sit amet erat augue. Suspendisse varius diam et elementum lacinia. In vel placerat velit. Maecenas ipsum quam, rhoncus id massa a, molestie porttitor lorem. Suspendisse suscipit nisi eu orci vehicula, in hendrerit lectus pretium.</string>
+    <string name="add">ADD</string>
+    <string name="food_added_calory">Food has been added to your Calory list.</string>
+    <string name="add_calory">Add Calory</string>
+    <string name="restart_device">Please restart your application for English interface.</string>
+    <string name="water_amount_added">Amount has been added.</string>
+
+
+    <string name="next">ILERI</string>
+    <string name="skip">ATLA</string>
+    <string name="start">BAŞLA</string>
+
+    <string name="slide_1_title">Hoşgeldiniz !</string>
+    <string name="slide_1_desc">HealthyApp sizin sağlıklı ve düzenli bir yaşam sürdürmenizi amaçlar.</string>
+
+    <string name="slide_2_title">Kalori / Su Takibi</string>
+    <string name="slide_2_desc">Günlük tükettiğiniz su ve kalori miktarı görüntülenmesi.</string>
+
+    <string name="slide_3_title">Adımsayar</string>
+    <string name="slide_3_desc">Adım sayar ile günlük gerekli adım sayısı takibi.</string>
+
+    <string name="slide_4_title">Hatırlatıcı</string>
+    <string name="slide_4_desc">Su, yürüyüş veya ilaç hatırlatıcısı ile program takibi.</string>
+    <string name="amount_has_been_removed">Amount has been removed. </string>
+    <string name="target">Target</string>
+
+</resources>
