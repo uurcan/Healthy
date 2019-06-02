@@ -17,8 +17,8 @@ Values clears itself per 24 hours.
 Pedometer screen on the application user can display its own realtime step count in the application.
 Application also can work on the background. Even if the program is shutdown, the services still be working at the background.
 In every end of the day step count will be implemented into the database. User can also check its weekly stepcount from the application.
-User can set schedule and programs using Reminder screen. Reminder screen requires reminder text,date time and reminder type (notification or alarm). 
-After the input of the values background services will be activated. Even if the application shutdown reminder will get on the foreground. User can also update and delete its own reminders from the list.
+
+User can set schedule and programs using Reminder screen.Reminder screen requires reminder text,date time and reminder type (notification or alarm). After the input of the values background services will be activated. Even if the application shutdown reminder will get on the foreground. User can also update and delete its own reminders from the list.
 
 All the screens can be accessed at the Home screen. Home screen also include Language preference screen.
 User can select language interface of the program (Turkish or English) from the preferences Screen.
