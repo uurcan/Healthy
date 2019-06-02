@@ -18,6 +18,9 @@ Pedometer screen on the application user can display its own realtime step count
 Application also can work on the background. Even if the program is shutdown, the services still be working at the background.
 In every end of the day step count will be implemented into the database. User can also check its weekly stepcount from the application.
 
+<img src ="https://user-images.githubusercontent.com/42876704/58762896-1e668a00-855d-11e9-802b-87f47fe2e194.png" width = "200" height = "400"/>
+
+
 User can set schedule and programs using Reminder screen. Reminder screen requires reminder text,date time and reminder type (notification or alarm). 
 After the input of the values background services will be activated. Even if the application shutdown reminder will get on the foreground.
 User can also update and delete its own reminders from the list.
