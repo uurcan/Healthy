@@ -5,7 +5,7 @@ HealthyApp health application developed for the users who provides unhealthy and
 Tutorial screen begins for the users who launches app for the first time. 
 Users can be take information about the application's interface in this tutorial screen.
 
-After the tutorial screen user directs to the calculator screen and user inputs its own weight and height. 
+After the tutorial screen user will be directed to the calculator screen and user inputs its own weight and height. 
 After the calculation of the weight and height values program returns a value of Body Mass Index of user and required amount of water.
 After the calculation the amount of water, the value will be daily required amount water target of user.
 
