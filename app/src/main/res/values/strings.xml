@@ -134,5 +134,6 @@
     <string name="slide_4_desc">Su, yürüyüş veya ilaç hatırlatıcısı ile programlarınızı takip edin.</string>
     <string name="amount_has_been_removed">Değer günlük havuzdan çıkarıldı</string>
     <string name="target">Hedef</string>
-
+    <string name="clean">Temizle</string>
+    <string name="sure_to_clean">Miktarı temizlemek istediğinizden emin misiniz ? </string>
 </resources>

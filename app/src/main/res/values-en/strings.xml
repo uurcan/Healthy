@@ -97,7 +97,7 @@
     <string name="turkish">Türkçe</string>
     <string name="english">English</string>
     <string name="pick_language">Select Language</string>
-    <string name="cancel">CANCEL</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
     <string name="editing_complete">Editing has been completed.</string>
     <string name="alarm_has_been_set">The alarm has been set</string>
     <string name="about">About</string>
@@ -136,4 +136,6 @@
     <string name="amount_has_been_removed">Amount has been removed. </string>
     <string name="target">Target</string>
 
+    <string name="clean">Clean</string>
+    <string name="sure_to_clean">Are you sure you want to clean data ? </string>
 </resources>

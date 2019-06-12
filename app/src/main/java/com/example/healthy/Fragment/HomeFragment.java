@@ -31,7 +31,7 @@ import java.text.DecimalFormat;
 import java.util.Locale;
 import java.util.Objects;
 
-public class HomeFragment extends BaseFragment implements View.OnClickListener {
+public class HomeFragment extends BaseFragment implements View.OnClickListener,View.OnLongClickListener {
 
     private TextView textViewRequiredAmount,textViewPedometerSummary,textViewFoodSummary,textViewReminderSummary;
     private ProgressBar progressBar;
@@ -90,6 +90,19 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
+    @Override
+    public boolean onLongClick(View v) {
+        switch (v.getId()){
+            case R.id.imageViewWaterSummary:
+                waterCleanerDialog();
+                break;
+            case R.id.imageViewCaloriesSummary:
+                caloriesCleanerDialog();
+                break;
+        }
+        return false;
+    }
+
     private void initializeSharedPreferences(){
         if(getActivity() != null){
              preferences = getActivity().getSharedPreferences(ApplicationConstants.CONSTANT_REQUIRED_AMOUNT, Context.MODE_PRIVATE);
@@ -113,6 +126,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             textViewPedometerSummary = view.findViewById(R.id.textViewPedometerSummary);
             textViewReminderSummary = view.findViewById(R.id.textViewReminderSummary);
             progressBar = view.findViewById(R.id.determinateBar);
+            imageViewCaloriesSummary.setOnLongClickListener(this);
+            imageViewWaterSummary.setOnLongClickListener(this);
             imageViewLanguagePreference.setOnClickListener(this);
             imageViewInfo.setOnClickListener(this);
             imageViewCaloriesSummary.setOnClickListener(this);
@@ -260,14 +275,14 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             ((MainActivity) getActivity()).switchTab(FragNavController.TAB5);
         }
     }
-    public void initializeLocale(){
+    private void initializeLocale(){
             if (getActivity() != null) {
                 SharedPreferences preferences = getActivity().getSharedPreferences(ApplicationConstants.CONSTANT_LANGUAGE_PREFERENCES, Context.MODE_PRIVATE);
                 String language = preferences.getString(ApplicationConstants.CONSTANT_SELECTED_LANGUAGE, ApplicationConstants.CONSTANT_TR);
                 setLocale(language);
         }
     }
-    public void setLocale(String lang){
+    private void setLocale(String lang){
         if (getContext() != null) {
             Locale locale = new Locale(lang);
             Configuration configuration = getResources().getConfiguration();
@@ -279,7 +294,50 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             editor.apply();
         }
     }
-
+    private void waterCleanerDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle(getString(R.string.clean));
+        builder.setMessage(getString(R.string.sure_to_clean));
+        builder.setNegativeButton(getString(R.string.negative), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.setPositiveButton(getString(R.string.positive), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (getContext() != null) {
+                    if (getActivity() != null)
+                            getContext().getSharedPreferences(ApplicationConstants.CONSTANT_DAILY_GOAL, Context.MODE_PRIVATE)
+                                .edit().clear().apply();
+                    }
+                }
+        });
+        builder.show();
+    }
+    private void caloriesCleanerDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle(getString(R.string.clean));
+        builder.setMessage(getString(R.string.sure_to_clean));
+        builder.setNegativeButton(getString(R.string.negative), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.setPositiveButton(getString(R.string.positive), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (getContext() != null) {
+                    if (getActivity() != null)
+                            getContext().getSharedPreferences(ApplicationConstants.CONSTANT_FOOD_CALORY, Context.MODE_PRIVATE)
+                                    .edit().clear().apply();
+                }
+            }
+        });
+        builder.show();
+    }
     @Override
     public void onDestroyView() {
         super.onDestroyView();
