@@ -54,12 +54,12 @@
     <string name="not_set">Not Set</string>
     <string name="time_format">HH:mm</string>
     <string name="dateFormat">dd/MM/yyyy</string>
-    <string name="pick_hour">Pick Hour</string>
+    <string name="pick_hour">Pıck Hour</string>
     <string name="delete">DELETE</string>
     <string name="edit">UPDATE</string>
     <string name="negative">NO</string>
     <string name="positive">YES</string>
-    <string name="selected_value_removed">ALARM REMOVED FROM YOUR LIST</string>
+    <string name="selected_value_removed">Alarm removed from your list</string>
     <string name="message">MESSAGE</string>
     <string name="dateTime_text">DATE</string>
     <string name="alert_type">Alert Type</string>
@@ -118,21 +118,21 @@
     <string name="water_amount_added">Amount has been added.</string>
 
 
-    <string name="next">ILERI</string>
-    <string name="skip">ATLA</string>
-    <string name="start">BAŞLA</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
 
-    <string name="slide_1_title">Hoşgeldiniz !</string>
-    <string name="slide_1_desc">HealthyApp sizin sağlıklı ve düzenli bir yaşam sürdürmenizi amaçlar.</string>
+    <string name="slide_1_title">Welcome !</string>
+    <string name="slide_1_desc">HealthyApp allows you to maintain a healthy and orderly life.</string>
 
-    <string name="slide_2_title">Kalori / Su Takibi</string>
-    <string name="slide_2_desc">Günlük tükettiğiniz su ve kalori miktarı görüntülenmesi.</string>
+    <string name="slide_2_title">Calorie / Water Tracking</string>
+    <string name="slide_2_desc">Displaying the amount of water and calories you consume daily.</string>
 
-    <string name="slide_3_title">Adımsayar</string>
-    <string name="slide_3_desc">Adım sayar ile günlük gerekli adım sayısı takibi.</string>
+    <string name="slide_3_title">Step counter</string>
+    <string name="slide_3_desc">Tracking the number of steps required daily with step counters.</string>
 
-    <string name="slide_4_title">Hatırlatıcı</string>
-    <string name="slide_4_desc">Su, yürüyüş veya ilaç hatırlatıcısı ile program takibi.</string>
+    <string name="slide_4_title">Reminder</string>
+    <string name="slide_4_desc">Schedule monitoring with water, gait or medication reminder.</string>
     <string name="amount_has_been_removed">Amount has been removed. </string>
     <string name="target">Target</string>
 
