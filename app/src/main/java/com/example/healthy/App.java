@@ -26,5 +26,5 @@ public class App extends Application {
                 new Intent(this, PreferencesCleanReceiver.class), PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         alarmManager.setInexactRepeating(AlarmManager.RTC, setCalendar.getTimeInMillis(), 1000 * 60 *60 *24 , pi);
-    } 
+    }
 }
