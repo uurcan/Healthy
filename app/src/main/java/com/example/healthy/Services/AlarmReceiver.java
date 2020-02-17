@@ -3,7 +3,6 @@ package com.example.healthy.Services;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Vibrator;
 
 import com.example.healthy.UI.Reminder.Alert;
 

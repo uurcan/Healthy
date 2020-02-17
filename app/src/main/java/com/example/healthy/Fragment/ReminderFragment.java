@@ -25,7 +25,7 @@ import com.example.healthy.Utils.ApplicationConstants;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ReminderFragment extends BaseFragment implements View.OnClickListener{
-    int fragCount;
+    private int fragCount;
     private ListView listView;
     private SQLiteDatabase sqLiteDatabase;
 

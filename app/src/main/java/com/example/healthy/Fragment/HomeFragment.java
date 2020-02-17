@@ -202,9 +202,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener,V
             TextView textViewAbout = preferencesView.findViewById(R.id.textViewAbout);
             StringBuilder builder1 = new StringBuilder("Version : ").append(BuildConfig.VERSION_NAME).append(" (")
                     .append(BuildConfig.VERSION_CODE).append(") \n");
-            StringBuilder builder2 = new StringBuilder(getString(R.string.created_by)).append(" ").append(getString(R.string.Ugurcan_Celebi));
 
-            textViewAbout.setText(builder1.append(builder2));
+            textViewAbout.setText(builder1.append(getString(R.string.created_by)).append(" ").append(getString(R.string.Ugurcan_Celebi)));
             builder.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
