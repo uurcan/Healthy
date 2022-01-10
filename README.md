@@ -21,12 +21,4 @@ In every end of the day step count will be implemented into the database. User c
 User can set schedule and programs using Reminder screen.Reminder screen requires reminder text,date time and reminder type (notification or alarm). After the input of the values background services will be activated. Even if the application shutdown reminder will get on the foreground. User can also update and delete its own reminders from the list.
 
 All the screens can be accessed at the Home screen. Home screen also include Language preference screen.
-User can select language interface of the program (Turkish or English) from the preferences Screen.
-
-# Screenshots
-<img align="left" width="225" height="400" src="https://user-images.githubusercontent.com/42876704/58763215-abf7a900-8560-11e9-95b3-006328713abe.png">
-<img align="right" width="225" height="400" src="https://user-images.githubusercontent.com/42876704/58763216-abf7a900-8560-11e9-842b-7507c1e143a1.png">
-<p align="center">
-  <img width="225" height="400" src="https://user-images.githubusercontent.com/42876704/58763217-ac903f80-8560-11e9-863d-48589873caad.png">
-</p>                             
-                                    
+User can select language interface of the program (Turkish or English) from the preferences Screen.                      
